@@ -1,0 +1,112 @@
+<!-- <h1>Property Binding</h1>
+
+<input type="text" [disabled]="disabledBox" [value]="name">
+<br><br>  
+<input type="text" disabled={{disabledBox}} value={{name}} />
+<br><br>
+<button (click)="enableBox()">Enable TextBox</button>
+
+<h1>Conditional Statement</h1>
+
+<h1 *ngIf="show else elseBlock">
+  If Block
+</h1>
+<ng-template #elseBlock>
+  <h1>Elese Block</h1>
+</ng-template>
+
+<h1>Switch Cases</h1>
+
+<div [ngSwitch]="color">
+    <h2 style="color: red;" *ngSwitchCase="'red'">
+      red Color
+    </h2>
+    <h2 style="color: green;" *ngSwitchCase="'green'">
+      green Color
+    </h2>
+    <h2 style="color: yellow;" *ngSwitchCase="'yellow'">
+      blue Color
+    </h2>
+
+</div> -->
+
+
+<!-- <h1>Forms </h1>
+
+<form #simpleForm="ngForm" (ngSubmit) = "getUserValue(simpleForm.value)">
+  <input type="text" ngModel name="username" placeholder="Enter Name"><br><br>
+  <input type="text" ngModel name="age" placeholder="Enter Age"><br><br>
+  <input type="text" ngModel name="address" placeholder="Enter Address">
+ <br><br> <button>Get User Value</button>
+</form> -->
+
+
+
+<app-header></app-header>
+<!-- <button mat-raised-button>Aangular</button>  -->
+
+<!-- Sending Data Parent to Child -->
+<!-- <app-users [hero]="data"></app-users> -->
+<!--  -->
+
+<!-- sending Data Child to parent component -->
+<!-- 
+<app-users (parentComponent)="parentComponent($event)"></app-users>
+-->
+
+<!-- <a routerLink="user">User</a>
+<br><br>
+<a routerLink="admin">admin</a>
+<br><br>
+<a routerLink="about">About us</a>
+<router-outlet></router-outlet> -->
+
+<!-- Custom directive -->
+<!-- <h1>Custom Directve in Angular</h1>
+<h2>Normal Heading</h2>
+<h4 appCustomStyle>Custom Heading</h4> -->
+
+<br><br><br>
+<table border="1">
+  <tr>
+    <td>Id</td>
+    <td>Title</td>
+    <td>UserId</td>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td>{{item.userId}}</td>
+  </tr>
+</table>
+
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
